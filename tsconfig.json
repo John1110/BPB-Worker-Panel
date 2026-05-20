@@ -20,19 +20,19 @@
             "@sing-box/*": ["cores/sing-box/*"],
             "@clash/*": ["cores/clash/*"],
             "@utils": ["cores/utils/index.ts", "cores/utils.ts"],
-            "@utils": ["cores/utils"],
+            "@utils/*": ["cores/utils/*"],
             "@handlers": ["common/handlers/index.ts", "common/handlers.ts"],
-            "@handlers": ["common/handlers"],
+            "@handlers/*": ["common/handlers/*"],
             "@init": ["common/init/index.ts", "common/init.ts"],
-            "@init": ["common/init"],
+            "@init/*": ["common/init/*"],
             "@common": ["common/common/index.ts", "common/common.ts"],
-            "@common": ["common/common"],
+            "@common/*": ["common/common/*"],
             "@vless": ["protocols/websocket/vless/index.ts", "protocols/websocket/vless.ts"],
-            "@vless": ["protocols/websocket/vless"],
+            "@vless/*": ["protocols/websocket/vless/*"],
             "@trojan": ["protocols/websocket/trojan/index.ts", "protocols/websocket/trojan.ts"],
-            "@trojan": ["protocols/websocket/trojan"],
+            "@trojan/*": ["protocols/websocket/trojan/*"],
             "@warp": ["protocols/warp/index.ts", "protocols/warp.ts"],
-            "@warp": ["protocols/warp"]
+            "@warp/*": ["protocols/warp/*"]
         }
     }
 }
