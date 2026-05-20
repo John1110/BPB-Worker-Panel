@@ -3,9 +3,9 @@
     "compilerOptions": {
         "ignoreDeprecations": "6.0",
         "target": "esnext",
-        "module": "nodenext",
+        "module": "esnext",
         "types": ["@cloudflare/workers-types"],
-        "moduleResolution": "node16",
+        "moduleResolution": "bundler",
         "baseUrl": "src",
         "strict": true,
         "esModuleInterop": true,
@@ -14,15 +14,24 @@
         "resolveJsonModule": true,
         "isolatedModules": true,
         "paths": {
+            "kv": ["kv.ts"],
+            "auth": ["auth.ts"],
             "@xray/*": ["cores/xray/*"],
             "@sing-box/*": ["cores/sing-box/*"],
             "@clash/*": ["cores/clash/*"],
+            "@utils": ["cores/utils/index.ts", "cores/utils.ts"],
             "@utils": ["cores/utils"],
+            "@handlers": ["common/handlers/index.ts", "common/handlers.ts"],
             "@handlers": ["common/handlers"],
+            "@init": ["common/init/index.ts", "common/init.ts"],
             "@init": ["common/init"],
+            "@common": ["common/common/index.ts", "common/common.ts"],
             "@common": ["common/common"],
+            "@vless": ["protocols/websocket/vless/index.ts", "protocols/websocket/vless.ts"],
             "@vless": ["protocols/websocket/vless"],
+            "@trojan": ["protocols/websocket/trojan/index.ts", "protocols/websocket/trojan.ts"],
             "@trojan": ["protocols/websocket/trojan"],
+            "@warp": ["protocols/warp/index.ts", "protocols/warp.ts"],
             "@warp": ["protocols/warp"]
         }
     }
