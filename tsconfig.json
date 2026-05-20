@@ -3,7 +3,7 @@
     "compilerOptions": {
         "ignoreDeprecations": "6.0",
         "target": "esnext",
-        "module": "esnext",
+        "module": "nodenext",
         "types": ["@cloudflare/workers-types"],
         "moduleResolution": "node16",
         "baseUrl": "src",
